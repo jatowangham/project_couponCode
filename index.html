@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listing page of ZOMATO</title>
+    <link rel="stylesheet" href="listing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <h2>ZOMATO</h2>
+            <p>Online Food Order</p>
+        </div>
+        <nav>
+            <ul>
+                <li>1 (333) 555 - 8756</li>
+                <li>HOW IT WORKS</li>
+                <li>TESTIMONIALS</li>
+                <li>PRICING</li>
+                <li>CART</li>
+                <li><i class="fa-solid fa-cart-plus"></i></li>
+            </ul>
+        </nav>
+    </div>
+
+
+
+
+    <div class="header2">
+        <ol type="1">
+            <li>Choose Your Location</li>
+            <li>Choose Restaurent</li>
+            <li>Pick Your Favourite Food</li>
+            <li>Order And Pay Online</li>
+        </ol>
+    </div>
+
+
+
+    <div class="search">
+        <p class="p">Search Your Favour Food</p>
+        <p class="p2">Find restaurent, specials, and coupons for free</p>
+        <div class="search_input">
+            <input type="text" placeholder="search">
+            <button class="search_button">
+                <div class="feed">Feed Me</div>
+                <div><i class="fa-solid fa-magnifying-glass"></i></div>
+            </button>
+        </div>
+    </div>
+
+    <div class="coupon">
+        <button onClick="couponClose()">&times;
+            <div class="item_coucher">
+                <p class="p">Gift</p>
+                <p class="pa">VOUCHER</p>
+            </div>
+            <div class="gift">
+                <div class="circle">
+                    <p>25%</p>
+                    <h2>Discount</h2>
+                </div>
+                <p class="coupon_p">COUPON</p>
+                <h3>valid till: 31/12/2022</h3>
+            </div>
+        </button>
+    </div>
+
+    <div class="coupon1">
+        <button onclick="couponClose()"></button>
+    </div>
+
+
+    <div class="menu">
+        <div class="container_menu">
+            <div class="sidebar">
+                <div class="filter">
+                    <div><i class="fa-regular fa-xmark"></i></div>
+                    <div>Search Filters</div>
+                    <div><i class="fa-solid fa-check"></i></div>
+                </div>
+                <div class="sidebar_search">
+                    <input type="text" placeholder="search">
+                    <button>
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+
+
+                <div class="item">
+                    <div class="fooditem">
+                        <form>
+                            <input type="checkbox" name="vehicle1" value="Bike">
+                            <label for="vehicle1">sanwiches</label>
+                            <input type="checkbox" name="vehicle2" value="Car">
+                            <label for="vehicle2">vegeterian</label>
+                            <input type="checkbox" name="vehicle1" value="Bike">
+                            <label for="vehicle1">fast food</label>
+                            <input type="checkbox" name="vehicle2" value="Car">
+                            <label for="vehicle2">indian food</label>
+                            <input type="checkbox" name="vehicle3" value="Boat" checked>
+                            <label for="vehicle3">thai</label>
+                            <input type="submit" value="Submit" class="item_submit">
+                        </form>
+                    </div>
+
+                    <div class="delivery">
+                        <p>Food for:</p>
+                        <div class="delivery-process">
+                            <form>
+                                <input type="radio" id="html" name="fav_language" value="HTML">
+                                <label for="html">delivery</label>
+                                <input type="radio" id="css" name="fav_language" value="CSS">
+                                <label for="css">pickup</label>
+                            </form>
+                        </div>
+                    </div>
+
+
+
+                    <div class="tags">
+                        <div class="tag_desc">
+                            <p>popular tags</p>
+                            <p><i class="fa-solid fa-ellipsis"></i></p>
+                        </div>
+                        <div class="tags_item">
+                            <div class="itemm">
+                                <div class="item_name">
+                                    grill
+                                </div>
+                                <!-- <div class="cross">
+                                    <i class="fa-regular fa-xmark"></i>
+                                </div> -->
+                            </div>
+                            <div class="itemm">
+                                <div class="item_name">
+                                    fish
+                                </div>
+                                <!-- <div class="cross">
+                                    <i class="fa-regular fa-xmark"></i>
+                                </div> -->
+                            </div>
+                            <div class="itemm">
+                                <div class="item_name">
+                                    meat
+                                </div>
+                                <!-- <div class="cross">
+                                    <i class="fa-regular fa-xmark"></i>
+                                </div> -->
+                            </div>
+                            <div class="itemm">
+                                <div class="item_name">
+                                    veg
+                                </div>
+                                <!-- <div class="cross">
+                                    <i class="fa-regular fa-xmark"></i>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="price">
+                        <p>price rance</p>
+                        <div class="price_form">
+                            <form>
+                                <label for="vol">$0</label>
+                                <input type="range" id="vol" name="vol" min="0" max="50">
+                                <input type="submit" class="price_submit">
+                            </form>
+                        </div>
+                    </div>
+
+
+                    <div class="rating">
+                        <p>rating</p>
+                        <div class="rating_form">
+                            <form>
+                                  <input type="radio" id="html" name="fav_language" value="HTML">
+                                  <label for="html">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                </label><br>
+                                  <input type="radio" id="css" name="fav_language" value="CSS">
+                                  <label for="css">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </label><br>
+                                  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                                  <label for="javascript">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </label> <br>
+                                  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+                                  <label for="javascript">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                    <i class="fa-regular fa-star"></i>
+                                </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="homepage">
+                <div class="mainpage1">
+                    <div class="mainpage">
+                        <div class="main_img"><img src="https://i.ibb.co/XjFC0Tp/pic1.jpeg" alt=""></div>
+
+                        <div class="desc">
+                            <h2>The south best fried chcicken</h2>
+                            <p>fried chicken with cheese</p>
+                            <div class="rupe">
+                                <p>$ 18,49</p>
+                                <p>order now</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mainpage">
+                        <div class="main_img"><img src="https://i.ibb.co/M53gNpT/pic2.png" alt=""></div>
+
+                        <div class="desc">
+                            <h2>The south best fried chcicken</h2>
+                            <p>fried chicken with cheese</p>
+                            <div class="rupe">
+                                <p>$ 18,49</p>
+                                <p>order now</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mainpage">
+                        <div class="main_img"><img src="https://i.ibb.co/X3Bq57W/pic3.jpg" alt=""></div>
+
+                        <div class="desc">
+                            <h2>The south best fried chcicken</h2>
+                            <p>fried chicken with cheese</p>
+                            <div class="rupe">
+                                <p>$ 18,49</p>
+                                <p>order now</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mainpage">
+                        <div class="main_img"><img src="https://i.ibb.co/4PzkP04/pic4.jpg" alt=""></div>
+
+                        <div class="desc">
+                            <h2>The south best fried chcicken</h2>
+                            <p>fried chicken with cheese</p>
+                            <div class="rupe">
+                                <p>$ 18,49</p>
+                                <p>order now</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mainpage">
+                        <div class="main_img"><img src="https://i.ibb.co/TTLVr1c/pic5.webp" alt=""></div>
+
+                        <div class="desc">
+                            <h2>The south best fried chcicken</h2>
+                            <p>fried chicken with cheese</p>
+                            <div class="rupe">
+                                <p>$ 18,49</p>
+                                <p>order now</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mainpage">
+                        <div class="main_img"><img src="https://i.ibb.co/mzrcCTY/pic6.png" alt=""></div>
+
+                        <div class="desc">
+                            <h2>The south best fried chcicken</h2>
+                            <p>fried chicken with cheese</p>
+                            <div class="rupe">
+                                <p>$ 18,49</p>
+                                <p>order now</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mainpage">
+                        <div class="main_img"><img src="https://i.ibb.co/XjFC0Tp/pic1.jpeg" alt=""></div>
+
+                        <div class="desc">
+                            <h2>The south best fried chcicken</h2>
+                            <p>fried chicken with cheese</p>
+                            <div class="rupe">
+                                <p>$ 18,49</p>
+                                <p>order now</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mainpage">
+                        <div class="main_img"><img src="https://i.ibb.co/4PzkP04/pic4.jpg" alt=""></div>
+
+                        <div class="desc">
+                            <h2>The south best fried chcicken</h2>
+                            <p>fried chicken with cheese</p>
+                            <div class="rupe">
+                                <p>$ 18,49</p>
+                                <p>order now</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mainpage">
+                        <div class="main_img"><img src="https://i.ibb.co/TTLVr1c/pic5.webp" alt=""></div>
+
+                        <div class="desc">
+                            <h2>The south best fried chcicken</h2>
+                            <p>fried chicken with cheese</p>
+                            <div class="rupe">
+                                <p>$ 18,49</p>
+                                <p>order now</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="nextpage">
+                    <div class="netpage_serial">1</div>
+                    <div class="netpage_serial">2</div>
+                    <div class="netpage_serial">3</div>
+                    <div class="netpage_serial">4</div>
+                    <div class="netpage_serial">5</div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+
+        <div class="footer1">
+            <div class="footer_first">
+                <h3>zomato</h3>
+                <p> order delivery & take-out</p>
+            </div>
+            <div class="footer_about">
+                <h3>About us</h3>
+                <p>history</p>
+                <p>our team</p>
+                <p>we are hiring</p>
+            </div>
+            <div class="works">
+                <h3>how it works</h3>
+                <p>enter your location</p>
+                <p>choose restaurent</p>
+                <p>choose meal</p>
+                <p>pay via credit card</p>
+                <p>wait for delivery</p>
+            </div>
+            <div class="pages">
+                <h3>pages</h3>
+                <p>search result page</p>
+                <p>user sign up page</p>
+                <p>pricing page</p>
+                <p>make order</p>
+                <p>add to cart</p>
+            </div>
+            <div class="location">
+                <h3>popular location</h3>
+                <p>delhi</p>
+                <p>mumbai</p>
+                <p>bangalore</p>
+                <p>gurgaon</p>
+            </div>
+        </div>
+
+        <div class="footer2">
+            <div class="payment_options">
+                <h3>Payment options</h3>
+                <img src="https://i.ibb.co/zhKr2Pq/images-paypall.jpg">
+                <img src="https://i.ibb.co/FnVYg7B/gpay.png">
+                <img src="https://i.ibb.co/2kPKny9/paytm-icon-icons-com-62778.png">
+                <img src="https://i.ibb.co/sbZkZCg/phonepe-logo-icon.webp">
+                <img
+                    src="https://i.ibb.co/pWm86Xk/e-wallet-logo-white-background-e-wallet-logo-design-template-211264067.jpg">
+            </div>
+
+            <div class="address">
+                <h3>address</h3>
+                <p>Concept design of online food order and delivery</p>
+                <p class="address_p">Phone: <span>089 654 777</span></p>
+            </div>
+
+            <div class="additional_info">
+                <h3>addition informations</h3>
+                <p>join the thousand of other restaurent who benefits from <br> having their menus on TakeOff</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        window.onload = loadCoupon()
+    </script>
+
+
+</body>
+
+</html>
